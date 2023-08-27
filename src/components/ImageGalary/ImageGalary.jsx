@@ -7,7 +7,7 @@ function ImageGalary(){
             <h1>
                 ImageGalary
             </h1>
-            <Search/>
+            {/* <Search/> */}
             <ImageList/>
         </div>
     )
