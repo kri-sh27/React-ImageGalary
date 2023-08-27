@@ -1,5 +1,4 @@
 import ImageList from "../ImageList/ImageList";
-import Search from "../Search/Search";
 import "./ImageGalary.css";
 function ImageGalary() {
   return (
