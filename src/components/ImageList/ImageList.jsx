@@ -4,14 +4,14 @@ import axios from "axios";
 import ImageViewer from "../Image/ImageViewer";
 
 function ImageList() {
-  const DEFAULT_URL="https://api.slingacademy.com/v1/sample-data/photos?offset=5&limit=20"
+  const DEFAULT_URL =
+    "https://api.slingacademy.com/v1/sample-data/photos?offset=5&limit=20";
   const [imageList, setImageList] = useState([]);
 
-  const [imageUrl,setImageUrl]=useState(DEFAULT_URL)
- 
+  const [imageUrl, setImageUrl] = useState(DEFAULT_URL);
 
   async function downloadImages() {
-    const response = await axios.get(imageUrl?imageUrl:DEFAULT_URL);
+    const response = await axios.get(imageUrl ? imageUrl : DEFAULT_URL);
     // console.log(response.data);
     // console.log(response.data.photos);
 
@@ -54,10 +54,16 @@ function ImageList() {
   return (
     <div className="image-list-wrapper">
       {/* <div>image List</div> */}
-     <div className="image-list">{
-    imageList.map((image)=>(<ImageViewer url={image.url} key={image.id} title={image.title}/>))
-   } </div>
-   
+      <div className="image-list">
+        {imageList.map((image) => (
+          <ImageViewer
+            url={image.url}
+            key={image.id}
+            title={image.title}
+            id={image.id}
+          />
+        ))}{" "}
+      </div>
     </div>
   );
 }
