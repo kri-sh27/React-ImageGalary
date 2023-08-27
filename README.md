@@ -19,7 +19,7 @@ Before you begin, ensure you have the following software installed on your machi
  2. **Navigate to the Project Directory:**
 Change your working directory to the project folder:
 ```bash
-cd React-ImageGallery
+cd ImageGalery
 ```
 3. **Install Dependencies:**
 Use npm to install the required dependencies:
