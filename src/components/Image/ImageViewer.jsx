@@ -10,8 +10,6 @@ function ImageViewer(props) {
   return (
     <Link to={`/photos/${id}`} className="imageviewer-wrapper">
       <div className="imageviewer">
-        {/* <div>{TITLE}</div> */}
-
         <div>
           <img className="imageviewer-image" src={IMAGE_URL} alt="Image" />
         </div>

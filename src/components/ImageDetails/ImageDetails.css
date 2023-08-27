@@ -15,7 +15,7 @@
 
 .card-image {
   max-height: 40%;
-  min-height: 270px; /*200*/
+  min-height: 270px; 
   border-radius: 10px;
   max-width: 90%;
 }

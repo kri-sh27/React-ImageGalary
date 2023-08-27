@@ -13,9 +13,7 @@ function ImageDetails() {
     try {
       const response = await axios.get(IMAGE_DEATIL_URL + id);
       const photoData = response.data.photo;
-      //   const photo = photoData.photo;
-      //   console.log(photo);
-      // console.log(photoData)
+
       setPhoto({
         description: photoData.description,
         title: photoData.title,
@@ -31,16 +29,16 @@ function ImageDetails() {
   }, []);
   return (
     photo && (
-        <div className="container">
-      <div className="card">
-        <div>
-          <img className="card-image" src={photo.url} alt={photo.title} />
+      <div className="container">
+        <div className="card">
+          <div>
+            <img className="card-image" src={photo.url} alt={photo.title} />
+          </div>
+          <div className="card-content">
+            <div className="card-title">{photo.title}</div>
+            <div className="card-description"> {photo.description}</div>
+          </div>
         </div>
-        <div className="card-content">
-          <div className="card-title">{photo.title}</div>
-          <div className="card-description"> {photo.description}</div>
-        </div>
-      </div>
       </div>
     )
   );

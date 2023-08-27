@@ -9,7 +9,6 @@ import ImageDetails from "./components/ImageDetails/ImageDetails";
 function App() {
   return (
     <Routes>
-      {/* <ImageGalary /> */}
       <Route path="/" element={<ImageGalary/>}/>
       <Route path="/photos/:id" element={<ImageDetails/>}/>
       <Route path="*" element={<h1> NOT FOUND</h1>}/>

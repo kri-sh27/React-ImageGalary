@@ -18,20 +18,7 @@ function ImageList() {
     const imageResults = response.data.photos; //array of photos
     // console.log(imageResults);
 
-    // const imagePromise=imageResults.map((image)=> axios.get(image.url))
-    // console.log(imagePromise)
-
-    // const imageListData= await axios.all(imagePromise)
-    // console.log(imageListData)
-
-    // const imageFinalList= imageListData.map(imageData =>{
-    //     const image= imageData.data
-    //     console.log(image)
-    //     return{
-    //         url:ima
-    //     }
-
-    // })
+    
 
     const imageFinalList = imageResults.map((imageinfo) => {
       const image = imageinfo;
@@ -53,7 +40,6 @@ function ImageList() {
 
   return (
     <div className="image-list-wrapper">
-      {/* <div>image List</div> */}
       <div className="image-list">
         {imageList.map((image) => (
           <ImageViewer
@@ -62,7 +48,7 @@ function ImageList() {
             title={image.title}
             id={image.id}
           />
-        ))}{" "}
+        ))}
       </div>
     </div>
   );
