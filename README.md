@@ -42,6 +42,15 @@ http://localhost:5173
 To stop the development server, go to the terminal where the server is running and press `Ctrl + C`. This will gracefully shut down the server.
 
 
+#SCREENSHOTS
+<h1 [align]="center">ScreenShot</h1><hr>
+    <img src="screenshots/ig1.jpg" [align]="center" width="100%"/>
+    <img src="screenshots/ig2.jpg" [align]="center" width="100%"/>
+    <img src="screenshots/ig3.jpg" [align]="center" width="100%"/>
+    <img src="screenshots/ig4.jpg" [align]="center" width="100%"/>
+    <hr>
+
+
 
    
 
